@@ -30,17 +30,24 @@ body {
   height: 1px;
 }
 
-.Nav__menu {
-  display: flex;
-  align-items: center;
+.Wrapper {
+  padding-top: 55px;
 }
 
 .Nav {
   display: flex;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(33, 33, 33, 0.9);
+  background-color: rgba(33, 33, 33);
   padding: 12px 25px 12px 25px;
+}
+
+.Nav__menu {
+  display: flex;
+  align-items: center;
 }
 
 .Nav__hamburger {
@@ -103,8 +110,8 @@ body {
   display: grid;
   grid-row: 1;
   grid-column-gap: 20px;
-  grid-template: 1fr / 2fr 1fr;
-  padding: 20px 5% 20px 5%;
+  grid-template: 1fr / 2.5fr 1fr;
+  padding: 20px 25px 20px 25px;
 }
 
 .VideoInfo__title {
@@ -278,6 +285,48 @@ body {
   color: rgb(170, 170, 170);
   font-size: 13px;
   font-weight: 400;
+}
+
+.Comments {
+  margin-top: 20px;
+  grid-row: 2 / 1;
+}
+
+.Comments__stats-container {
+  display: flex;
+  align-items: center;
+}
+
+.Comments__form-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Comments__avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Comments__form {
+  width: 100%;
+}
+
+.Comments__form-input {
+  margin-left: 15px;
+  width: 97%;
+  background-color: rgba(100, 100, 100, 0);
+  color: white;
+  border: none;
+  border-bottom: 1px solid #323232;
+}
+
+.Comments__form-input:focus {
+  outline: none;
 }
 
 /* Toggle CSS adapted from w3schools - https://www.w3schools.com/howto/howto_css_switch.asp */
