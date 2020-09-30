@@ -452,4 +452,16 @@ input:checked + .slider:before {
   .Nav__search-form {
     display: none;
   }
+  .ContentGrid {
+    display: block;
+  }
+  .VideoInfo__container {
+    display: block;
+  }
+  .VideoInfo__btns {
+    margin-top: 25px;
+  }
+  .RelatedVideos {
+    margin-top: 25px;
+  }
 }
